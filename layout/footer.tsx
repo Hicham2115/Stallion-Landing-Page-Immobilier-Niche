@@ -16,7 +16,7 @@ export function Footer() {
             </span>
           </a>
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-[#dcdfe1]">
-            Sites web, CRM et applications sur mesure pour accompagner les agences de voyage au Maroc.
+            Sites web, CRM et outils sur mesure pour les agences immobilières spécialisées au Maroc.
           </p>
         </div>
         <div className="grid content-start gap-3">

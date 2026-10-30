@@ -2,11 +2,27 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+
 export const metadata: Metadata = {
-  title: "Sites web, CRM et applications pour agences de voyage | Stallion Advertising",
-  description: "Stallion Advertising développe des sites web, CRM et applications sur mesure pour les agences de voyage au Maroc : circuits, demandes de devis et dossiers voyageurs.",
-  openGraph: { title: "Solutions digitales pour agences de voyage", description: "Sites web, CRM et applications sur mesure au Maroc par Stallion Advertising.", locale: "fr_MA", type: "website" },
-  twitter: { card: "summary", title: "Stallion Advertising | Agences de voyage", description: "Sites web, CRM et applications pour votre agence de voyage au Maroc." },
+  ...(siteUrl
+    ? { metadataBase: new URL(siteUrl), alternates: { canonical: "/" } }
+    : {}),
+  title: "Création de sites web immobiliers & CRM au Maroc | Stallion",
+  description: "Stallion crée des sites web immobiliers, CRM et portails sur mesure au Maroc pour présenter vos biens et suivre vos prospects.",
+  openGraph: {
+    title: "Sites web immobiliers et CRM au Maroc | Stallion Advertising",
+    description:
+      "Sites web, CRM et portails sur mesure pour les agences immobilières au Maroc.",
+    locale: "fr_MA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Stallion Advertising | Solutions digitales immobilières",
+    description:
+      "Création de sites web immobiliers, CRM et portails pour les agences au Maroc.",
+  },
   icons: { icon: "/unicorn.png" },
 };
 

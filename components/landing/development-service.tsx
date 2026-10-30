@@ -3,23 +3,23 @@ import { Blocks, Gauge, Layers3, ShieldCheck } from "lucide-react";
 const capabilities = [
   {
     icon: Blocks,
-    title: "Sites web pour agences de voyage",
-    text: "Présentez vos destinations, circuits et départs. Facilitez les demandes de devis et le contact WhatsApp depuis un site adapté au mobile.",
+    title: "Sites web immobiliers",
+    text: "Présentez vos annonces immobilières, votre expertise et vos secteurs. Ajoutez des pages de biens, des critères de recherche et des formulaires de contact adaptés au mobile.",
   },
   {
     icon: Layers3,
     title: "CRM pour votre agence",
-    text: "Centralisez les fiches voyageurs, devis, réservations et relances. Retrouvez chaque dossier et son historique dans un même espace.",
+    text: "Centralisez les contacts, demandes, visites et relances. Retrouvez le suivi de chaque acheteur, vendeur, locataire ou propriétaire dans un même espace.",
   },
   {
     icon: Gauge,
-    title: "Applications voyageurs",
-    text: "Donnez accès aux programmes, documents de voyage et informations pratiques dans une application pensée pour vos clients.",
+    title: "Portails et espaces clients",
+    text: "Offrez à vos clients un espace clair pour suivre leurs demandes, retrouver les informations utiles et échanger avec votre équipe.",
   },
   {
     icon: ShieldCheck,
     title: "Outils et intégrations métier",
-    text: "Connectez vos outils existants et automatisez les tâches répétitives. Les intégrations sont définies selon les accès de vos fournisseurs.",
+    text: "Connectez vos outils existants et automatisez les tâches répétitives. Les intégrations sont définies selon les accès et les plateformes que vous utilisez.",
   },
 ];
 
@@ -35,10 +35,10 @@ export function DevelopmentService() {
             Ce que nous développons
           </p>
           <h2 className="mt-4 text-balance text-[40px] font-black leading-none tracking-[-.045em] sm:text-[56px]">
-            Des outils pour <em className="text-[#bafc0c]">votre quotidien.</em>
+            Un site immobilier et des outils pour <em className="text-[#bafc0c]">votre agence.</em>
           </h2>
           <p className="mt-6 max-w-xl text-[16px] leading-relaxed text-[#f7f7f7] sm:text-[18px]">
-            Votre équipe doit pouvoir se concentrer sur les voyages, pas sur des dossiers dispersés. Nous développons le site, le CRM ou l’application qui répond à votre façon de travailler.
+            Votre équipe doit pouvoir se concentrer sur les clients et les biens, pas sur des demandes dispersées. Nous développons le site, le CRM ou le portail adapté à votre spécialité immobilière.
           </p>
           <a
             href="#project-form"

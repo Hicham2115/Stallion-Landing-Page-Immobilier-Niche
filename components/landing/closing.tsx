@@ -15,14 +15,14 @@ const trackPixel = (event: string, data?: Record<string, unknown>) =>
   window.fbq?.("track", event, data);
 
 const projectTypes = [
-  "Site vitrine",
-  "Boutique en ligne",
-  "Marketplace",
-  "CRM",
-  "Plateforme",
+  "Site pour agence immobilière",
+  "Catalogue de biens immobiliers",
+  "Portail immobilier",
+  "CRM et suivi des prospects",
+  "Espace client",
   "Application mobile",
-  "SaaS",
-  "Automatisation",
+  "Automatisation des relances",
+  "Autre outil métier",
 ];
 const timelines = [
   "Dans le mois",
@@ -148,7 +148,7 @@ export function Closing() {
     mutationFn: async (values: typeof form.state.values) => {
       const data = projectSchema.parse(values);
       const message = [
-        "Bonjour Stallion Advertising, je souhaite discuter de la création gratuite d’un prototype.",
+        "Bonjour Stallion Advertising, je souhaite discuter d’un projet digital pour mon agence immobilière.",
         "",
         `Type de produit : ${data.projectType}`,
         `Délai de lancement : ${data.timeline}`,
@@ -195,11 +195,10 @@ export function Closing() {
           DÉMARRER UN PROJET
         </p>
         <h2 className="mt-4 text-center text-[42px] font-black leading-none tracking-[-.045em] sm:text-[56px]">
-          Contactez-nous pour votre prototype gratuit.
+          Parlons de votre projet immobilier.
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-center text-[16px] text-[#b6b9bb]">
-          Parlez-nous de votre idée. Nous vous répondrons pour vous proposer la
-          meilleure prochaine étape.
+          Site d’agence, catalogue de biens, CRM ou portail client : expliquez-nous votre besoin et nous vous proposerons la prochaine étape.
         </p>
         {submitted ? (
           <div className="mt-10 rounded-2xl border border-[#bafc0c]/30 bg-[#bafc0c]/10 p-8 text-center">
@@ -212,7 +211,7 @@ export function Closing() {
               Merci, votre demande est envoyée.
             </h3>
             <p className="mt-2 text-[15px] text-[#b6b9bb]">
-              Notre équipe de développement étudiera votre projet et vous
+              Notre équipe étudiera votre projet et vous
               contactera dans les meilleurs délais.
             </p>
           </div>
@@ -261,7 +260,7 @@ export function Closing() {
                     form.setFieldValue("role", event.target.value)
                   }
                   className="mt-2 min-h-13 min-w-0 w-full rounded-xl border border-white/12 bg-[#0d1011] px-4 text-[15px] text-white outline-none transition placeholder:text-[#777d7e]"
-                  placeholder="Dirigeant, propriétaire, responsable…"
+                  placeholder="Gérant, négociateur, responsable…"
                 />
               </label>
             </div>
@@ -300,7 +299,7 @@ export function Closing() {
               disabled={!projectType || !timeline}
               className="inline-flex min-h-13 w-full items-center justify-center gap-2 rounded-xl bg-[#bafc0c] px-3 py-3.5 text-[12px] font-extrabold text-[#0a0c0d] text-center shadow-[0_0_30px_rgba(186,252,12,.3)] transition hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-40 focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-[#bafc0c] sm:gap-2.5 sm:px-5 sm:text-[15px]"
             >
-              Obtenez votre prototype gratuitement
+              Discuter de mon projet
               <ArrowRight size={19} aria-hidden="true" />
             </button>
           </form>

@@ -18,7 +18,7 @@ export function CaseStudies() {
     <section id="case-studies" className="relative z-1 mx-auto w-[min(100%-2.5rem,1180px)] py-20 text-center sm:py-28">
       <p className="inline-flex items-center gap-2 rounded-full border border-[#65891c]/50 bg-[#65891c]/15 px-3.5 py-2 font-mono text-[11px] uppercase tracking-[.2em] text-[#bafc0c]"><span className="size-1.5 rounded-full bg-[#bafc0c]" />Nos dernières réalisations</p>
       <h2 className="mx-auto mt-5 text-balance text-[40px] font-black leading-none tracking-[-.045em] sm:text-[56px]">Conçus pour <em className="text-[#bafc0c]">votre croissance</em></h2>
-      <p className="mx-auto mt-5 max-w-2xl text-[16px] leading-relaxed text-[#b6b9bb] sm:text-[18px]">Une sélection de sites web, de plateformes et de systèmes internes créés par l’équipe de développement de Stallion.</p>
+      <p className="mx-auto mt-5 max-w-2xl text-[16px] leading-relaxed text-[#b6b9bb] sm:text-[18px]">Des projets réalisés dans plusieurs secteurs, qui montrent notre savoir-faire en sites web, plateformes et outils internes — des compétences que nous adaptons aux besoins des agences immobilières.</p>
       <div className="mt-12 grid gap-5 text-left md:grid-cols-2 lg:grid-cols-3">
         {studies.map((study) => (
           <article key={study.title} className="group flex flex-col rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition duration-300 hover:-translate-y-2 hover:border-[#65891c] hover:shadow-[0_0_30px_rgba(186,252,12,0.2)]">

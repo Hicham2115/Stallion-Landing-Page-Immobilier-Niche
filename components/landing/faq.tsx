@@ -2,28 +2,28 @@ import { ArrowRight, Plus } from "lucide-react";
 
 const questions = [
   [
-    "Puis-je personnaliser mon échéancier de paiement ?",
-    "Bien sûr. Nous adaptons les échéances à vos besoins et proposons des mensualités flexibles.",
+    "Pouvez-vous adapter le site à notre spécialité immobilière ?",
+    "Oui. Le site peut être pensé selon votre marché — immobilier résidentiel, haut de gamme, commercial ou location — et la manière dont vous accompagnez vos clients.",
   ],
   [
-    "Combien coûte la création d’une application ou d’un logiciel ?",
-    "Les projets commencent à 10 000 DH. Le tarif final dépend de la complexité, des fonctionnalités et du niveau de personnalisation souhaité.",
+    "Combien coûte la création d’un site ou d’un outil métier ?",
+    "Les projets commencent à 10 000 DH. Le tarif final dépend du périmètre, des fonctionnalités et du niveau de personnalisation souhaité.",
   ],
   [
-    "Combien de temps faut-il généralement pour réaliser un projet ?",
+    "Combien de temps faut-il pour réaliser un projet ?",
     "Le développement prend en moyenne de 3 à 8 mois, selon l’ampleur et les spécifications du projet.",
   ],
   [
+    "Pouvez-vous créer un CRM pour suivre nos prospects et nos biens ?",
+    "Nous pouvons concevoir un CRM adapté à vos étapes de suivi, aux informations que vous gérez et à vos besoins de relance. Le périmètre est défini avec votre équipe.",
+  ],
+  [
+    "Le site peut-il être connecté à nos outils actuels ?",
+    "C’est possible selon les outils utilisés et les accès disponibles. Nous vérifions les options d’intégration pendant le cadrage du projet.",
+  ],
+  [
     "Proposez-vous un accompagnement après le lancement ?",
-    "Oui. Nous assurons un accompagnement complet après le lancement pour que votre application reste performante et évolue avec vos besoins.",
-  ],
-  [
-    "Puis-je intégrer des outils ou services tiers à mon application ou logiciel ?",
-    "Bien sûr. Nous intégrons des API et des services tiers de façon fluide afin d’enrichir les fonctionnalités et l’expérience utilisateur.",
-  ],
-  [
-    "Vos solutions peuvent-elles évoluer avec mon activité ?",
-    "Oui. Nos solutions sont conçues pour s’adapter et évoluer facilement au rythme de votre entreprise.",
+    "Oui. Nous pouvons accompagner les évolutions et les besoins de maintenance après le lancement, selon le cadre défini pour le projet.",
   ],
 ];
 
