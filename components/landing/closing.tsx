@@ -80,7 +80,7 @@ function SelectField({
         className="flex min-h-13 w-full items-center justify-between rounded-xl border border-white/12 bg-[#0d1011] px-4 text-left text-[15px] text-white transition hover:border-[#65891c] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#bafc0c]"
       >
         <span
-          className={`${value ? "text-white" : "text-[#777d7e]"} lg:whitespace-nowrap`}
+          className={`${value ? "text-white" : "text-[#777d7e]"} min-w-0`}
         >
           {value || placeholder || `Choisir : ${label.toLowerCase()}`}
         </span>
@@ -247,7 +247,7 @@ export function Closing() {
                   onChange={(event) =>
                     form.setFieldValue("name", event.target.value)
                   }
-                  className="mt-2 min-h-13 w-full rounded-xl border border-white/12 bg-[#0d1011] px-4 text-[15px] text-white outline-none transition placeholder:text-[#777d7e] focus:border-[#bafc0c]"
+                  className="mt-2 min-h-13 min-w-0 w-full rounded-xl border border-white/12 bg-[#0d1011] px-4 text-[15px] text-white outline-none transition placeholder:text-[#777d7e] focus:border-[#bafc0c]"
                   placeholder="Votre nom"
                 />
               </label>
@@ -260,7 +260,7 @@ export function Closing() {
                   onChange={(event) =>
                     form.setFieldValue("role", event.target.value)
                   }
-                  className="mt-2 min-h-13 w-full rounded-xl border border-white/12 bg-[#0d1011] px-4 text-[15px] text-white outline-none transition placeholder:text-[#777d7e]"
+                  className="mt-2 min-h-13 min-w-0 w-full rounded-xl border border-white/12 bg-[#0d1011] px-4 text-[15px] text-white outline-none transition placeholder:text-[#777d7e]"
                   placeholder="Dirigeant, propriétaire, responsable…"
                 />
               </label>
@@ -276,7 +276,7 @@ export function Closing() {
                   onChange={(event) =>
                     form.setFieldValue("email", event.target.value)
                   }
-                  className="mt-2 min-h-13 w-full rounded-xl border border-white/12 bg-[#0d1011] px-4 text-[15px] text-white outline-none transition placeholder:text-[#777d7e] focus:border-[#bafc0c]"
+                  className="mt-2 min-h-13 min-w-0 w-full rounded-xl border border-white/12 bg-[#0d1011] px-4 text-[15px] text-white outline-none transition placeholder:text-[#777d7e] focus:border-[#bafc0c]"
                   placeholder="vous@agence.ma"
                 />
               </label>
@@ -290,7 +290,7 @@ export function Closing() {
                   onChange={(event) =>
                     form.setFieldValue("phone", event.target.value)
                   }
-                  className="mt-2 min-h-13 w-full rounded-xl border border-white/12 bg-[#0d1011] px-4 text-[15px] text-white outline-none transition placeholder:text-[#777d7e] focus:border-[#bafc0c]"
+                  className="mt-2 min-h-13 min-w-0 w-full rounded-xl border border-white/12 bg-[#0d1011] px-4 text-[15px] text-white outline-none transition placeholder:text-[#777d7e] focus:border-[#bafc0c]"
                   placeholder="+212 6XX XXX XXX"
                 />
               </label>
@@ -298,7 +298,7 @@ export function Closing() {
             <button
               type="submit"
               disabled={!projectType || !timeline}
-              className="inline-flex min-h-13 w-full items-center justify-center gap-2 rounded-xl bg-[#bafc0c] px-3 py-3.5 text-[12px] font-extrabold text-[#0a0c0d] whitespace-nowrap shadow-[0_0_30px_rgba(186,252,12,.3)] transition hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-40 focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-[#bafc0c] sm:gap-2.5 sm:px-5 sm:text-[15px]"
+              className="inline-flex min-h-13 w-full items-center justify-center gap-2 rounded-xl bg-[#bafc0c] px-3 py-3.5 text-[12px] font-extrabold text-[#0a0c0d] text-center shadow-[0_0_30px_rgba(186,252,12,.3)] transition hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-40 focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-[#bafc0c] sm:gap-2.5 sm:px-5 sm:text-[15px]"
             >
               Obtenez votre prototype gratuitement
               <ArrowRight size={19} aria-hidden="true" />

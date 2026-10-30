@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative z-1 grid min-h-[680px] place-items-center overflow-hidden sm:min-h-[min(880px,100dvh)]"
+      className="relative z-1 grid min-h-[680px] place-items-center overflow-hidden sm:min-h-[max(680px,min(880px,100dvh))]"
     >
       <video
         className="absolute inset-0 -z-10 h-full w-full object-cover"
@@ -20,12 +20,12 @@ export function Hero() {
         <source src="/video-hero.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-[#0a0c0d]/70 to-[#0a0c0d]/55" />
-      <div className="w-full max-w-[1050px] px-5 pt-8 pb-18 text-center">
+      <div className="w-full max-w-[1280px] px-5 pt-24 pb-12 text-center sm:pt-8 sm:pb-18">
         <p className="animate-[hero-fade-up_.7s_cubic-bezier(.22,1,.36,1)_both] inline-flex max-w-full items-center gap-2 whitespace-nowrap rounded-full border border-[#65891c]/50 bg-[#65891c]/15 px-2.5 py-2 font-mono text-[9px] uppercase tracking-[.12em] text-[#bafc0c] sm:px-3.5 sm:text-[11px] sm:tracking-[.2em]">
           <span className="size-1.5 shrink-0 rounded-full bg-[#bafc0c] shadow-[0_0_10px_#bafc0c]" />
           Agences de voyage · Maroc
         </p>
-        <h1 className="mx-auto mt-6 max-w-[1050px] text-balance text-[clamp(2.25rem,6.8vw,5.3rem)] font-black leading-[.98] tracking-[-.05em]">
+        <h1 className="mx-auto mt-6 max-w-[1240px] text-balance text-[clamp(2.25rem,6.8vw,5.3rem)] font-black leading-[.98] tracking-[-.05em]">
           <span className="hero-line">
             <span className="animate-[hero-line-in_.8s_cubic-bezier(.22,1,.36,1)_both]">
               Sites web, CRM et applications.

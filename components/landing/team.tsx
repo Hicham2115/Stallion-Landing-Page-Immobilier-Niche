@@ -144,7 +144,7 @@ export function Team() {
                     className="object-cover object-top transition duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0a0c0d] via-transparent to-transparent" />
-                  <p className="absolute inset-x-4 bottom-4 translate-y-3 text-[13px] leading-relaxed text-white opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                  <p className="absolute inset-x-4 bottom-4 translate-y-0 text-[13px] leading-relaxed text-white opacity-100 md:translate-y-3 md:opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                     {bio}
                   </p>
                 </div>
