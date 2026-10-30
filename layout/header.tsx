@@ -17,16 +17,6 @@ export function Header() {
           STALLION <strong className="text-[#bafc0c]">ADVERTISING</strong>
         </span>
       </a>
-      <details className="relative xl:hidden">
-        <summary className="cursor-pointer rounded-lg border border-[#65891c] px-3 py-2 text-sm font-bold">Menu</summary>
-        <nav aria-label="Navigation mobile" className="absolute right-0 top-full mt-3 grid w-60 rounded-xl border border-white/15 bg-[#0a0c0d] p-3 text-sm shadow-xl">
-          <a className="px-3 py-3" href="#development-service">Nos services</a>
-          <a className="px-3 py-3" href="#case-studies">Réalisations</a>
-          <a className="px-3 py-3" href="#team">Équipe</a>
-          <a className="px-3 py-3" href="#faq">Questions fréquentes</a>
-          <a className="px-3 py-3 text-[#bafc0c]" href="#project-form">Nous contacter</a>
-        </nav>
-      </details>
       <nav
         className="hidden items-center gap-1 xl:flex text-sm font-semibold text-white"
         aria-label="Navigation principale"
